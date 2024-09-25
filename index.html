@@ -4,16 +4,16 @@
 <html>
     
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimize screens for different size (from class) -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="30085993_styles.css"> <!-- Add your stylesheet here -->
-    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version="1.0" encoding="UTF-8"?>  <!-- for compatability - from svg -->
 </head>
 <!-- the background colour of the page should compliment the other colours being used --> <!-- I used a fall theme color scheme-->
 <body>
     <header class="hero-section">
         <!-- I can't get this to work --> 
-         <!-- from the original svg code provided in images section -->
+         <!-- from the original svg embedded code provided in images section (opened with notepad to see it)-->
         <svg class = "logo" viewBox="0 0 60 60" "version="1.0"
           xmlns="http://www.w3.org/2000/svg">
             <path transform="translate(0 -.17995)" d="m11.719 4.9375-7.4065 7.4375v42.031c0 1.108 0.892 2 2 2h47.468c1.109 0 2.001-0.892 2.001-2v-47.468c0-1.1085-0.892-2.0005-2-2.0005h-42.062z" fill="#b3b3b3" fill-rule="evenodd" stroke="#333" stroke-width="3.125"/>
@@ -25,13 +25,13 @@
 
         <h1>Welcome to Application</h1>
         <!-- This section should have a background image behind the Welcome to Application -->
-
-
+        <!-- Added in css -->
     </header>
     <!-- I really wish we could have a flourish in the background of these feature-section -->
     <!-- Added in the css of features-section! -->
 
     <!-- Each of these sections should have colours that compliment the colour of our background image and the foreground image -->
+    <!-- Colors Added in the css of features-section! -->
     <section class="features-section">
         <article class="feature">
             <h2>Top 5 Reasons to Choose Us</h2>
@@ -41,6 +41,7 @@
         </article>
         <article class="feature">
             <h2>Our Products Include:</h2>
+            <!-- Made it a list for aesthetic purposes -->
             <ul>
                 <li>Advanced technology</li>
                 <li>100% Reliable</li>
@@ -57,8 +58,11 @@
         <p>Information about the company.</p>
         <p>Click this link, it opens in a new window: 
             <a href="#" onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS', '_blank', 'width=800,height=600'); return false;">MDN Docs</a>
-        </p> <!-- opens actually in new window -->
+        </p> 
+        
+        <!-- link didnt work so forced it into opening in an actual in new window (with size)-->
         <!-- Insert the company image here, it's in the images directory called image-<size>.png -->
+        <!-- image(s) added in css-->  
     </section>
 
     <footer class="cta-section">

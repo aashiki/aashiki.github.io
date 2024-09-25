@@ -17,8 +17,9 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
 */
 
 /* Resizable Screens from D2L*/
+
 /* XS*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) /* From Advanced CSS lecture slides (slide 18)*/ {
     .hero-section {background-image: url('images/background-extra-small.jpg')}
     .about-section::after {content: url('images/image-small.png');}
 }
@@ -49,7 +50,7 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
 
 /* Header */
 h2 {
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff; /* Added underline for headers in feature sections (and anywhere else with h2 header) */
     display: inline-block; 
     padding-bottom: 5px;
 }
@@ -68,7 +69,8 @@ footer {
 
 .features-section {
     display: grid; /* Use Grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* from https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+    /*Autofits the feature contents, when screen is smaller, stacks feature columns. When bigger it puts them side by side*/
     gap: 20px;
     background-color: #fb916d;
     color: #ffffff;
@@ -86,7 +88,8 @@ footer {
 }
 /* Bullet points*/
 .feature ul {
-    list-style-position: inside;
+    list-style-position: inside; /* from https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position*/
+    /* For bullet point styling*/
 }
 
 .about-section {
