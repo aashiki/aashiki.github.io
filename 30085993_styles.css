@@ -21,7 +21,7 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
 /* XS*/
 @media only screen and (max-width: 600px) /* From Advanced CSS lecture slides (slide 18)*/ {
     .hero-section {background-image: url('images/background-extra-small.jpg')}
-    .about-section::after {content: url('images/image-small.png');}
+    .about-section::after {content: url('images/image-small.png');} /*https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
 }
 
 /* S */
