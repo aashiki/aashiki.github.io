@@ -19,39 +19,69 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
 /* Resizable Screens from D2L*/
 
 /* XS*/
-@media only screen and (max-width: 600px) /* From Advanced CSS lecture slides (slide 18)*/ {
-    .hero-section {background-image: url('images/background-extra-small.jpg')}
-    .about-section::after {content: url('images/image-small.png');} /*https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
+@media only screen and (max-width: 600px)
+/* From Advanced CSS lecture slides (slide 18)*/
+    {
+    .hero-section {
+        background-image: url('images/background-extra-small.jpg')
+    }
+
+    .about-section::after {
+        content: url('images/image-small.png');
+    }
+
+    /* create child for the image in about secti: https://developer.mozilla.org/en-US/docs/Web/CSS/::after*/
 }
 
 /* S */
 @media only screen and (min-width: 601px) {
-    .hero-section {background-image: url('images/background-small.jpg')}
-    .about-section::after {content: url('images/image-small.png');}
+    .hero-section {
+        background-image: url('images/background-small.jpg')
+    }
+
+    .about-section::after {
+        content: url('images/image-small.png');
+    }
 }
 
 /*M*/
 @media only screen and (min-width: 768px) {
-    .hero-section {background-image: url('images/background-medium.jpg')}
-    .about-section::after  {content: url('images/image-medium.png');}
+    .hero-section {
+        background-image: url('images/background-medium.jpg')
+    }
+
+    .about-section::after {
+        content: url('images/image-medium.png');
+    }
 }
 
 /*L*/
 @media only screen and (min-width: 992px) {
- .hero-section {background-image: url('images/background-large.jpg')}
- .about-section::after  {content: url('images/image-large.png');}
+    .hero-section {
+        background-image: url('images/background-large.jpg')
+    }
+
+    .about-section::after {
+        content: url('images/image-large.png');
+    }
 }
 
 /*XL*/
 @media only screen and (min-width: 1200px) {
-    .hero-section {background-image: url('images/background-extra-large.jpg')}
-    .about-section::after  {content: url('images/image-extra-large.png');}
+    .hero-section {
+        background-image: url('images/background-extra-large.jpg')
+    }
+
+    .about-section::after {
+        content: url('images/image-extra-large.png');
+    }
 }
 
 /* Header */
 h2 {
-    border-bottom: 3px solid #ffffff; /* Added underline for headers in feature sections (and anywhere else with h2 header) */
-    display: inline-block; 
+    border-bottom: 3px solid #ffffff;
+    /* Added underline for headers in feature sections (and anywhere else with h2 header) */
+    display: inline-block;
     padding-bottom: 5px;
 }
 
@@ -60,6 +90,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header,
 section,
 footer {
@@ -68,8 +99,10 @@ footer {
 }
 
 .features-section {
-    display: grid; /* Use Grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* from https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+    display: grid;
+    /* Use Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* from https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
     /*Autofits the feature contents, when screen is smaller, stacks feature columns. When bigger it puts them side by side*/
     gap: 20px;
     background-color: #fb916d;
@@ -80,15 +113,18 @@ footer {
 }
 
 .feature {
-    background-color: rgba(255, 255, 255, 0.2); /* opacity little bit */
-    border-radius: 8px; 
-    border: 3px solid #fff5e6; 
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(21, 20, 20, 0.2); 
+    background-color: rgba(255, 255, 255, 0.2);
+    /* opacity little bit */
+    border-radius: 8px;
+    border: 3px solid #fff5e6;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(21, 20, 20, 0.2);
 }
+
 /* Bullet points*/
 .feature ul {
-    list-style-position: inside; /* from https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position*/
+    list-style-position: inside;
+    /* from https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position*/
     /* For bullet point styling*/
 }
 
@@ -109,7 +145,9 @@ footer {
     background-color: #df6819;
     color: #ffffff;
     background-repeat: no-repeat;
-    flex-direction: column; /* image was covering text*/ /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction*/
+    flex-direction: column;
+    /* image was covering text*/
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction*/
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -119,4 +157,3 @@ footer {
     height: 50px;
     width: 50px;
 }
-
