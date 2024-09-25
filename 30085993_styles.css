@@ -1,0 +1,115 @@
+/* 
+Hello I will be commenting through out
+I started off by copy and pasting the previous styles sheet and overriding, it should override because I call it second in the HTML file
+For my theme I found a pretty fall theme online at https://venngage.com/blog/fall-color-palettes/
+
+Additional Images Used
+Mega Charizard: https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/0aa78a0061bda9d88cbb0bbf739cd9cc56522fe9.png
+Charizard: https://assets.pokemon.com/assets/cms2/img/pokedex/full//006.png
+Charmeleon: https://img.pokemondb.net/artwork/large/charmeleon.jpg
+Charmander: https://pokestop.io/img/pokemon/charmander-256x256.png
+
+Background extra small:
+*/
+
+/* Resizable Screens from D2L*/
+/* XS*/
+@media only screen and (max-width: 600px) {
+    .hero-section {background-image: url('images/background-extra-small.jpg')}
+    .about-section::after {content: url('images/image-small.png');}
+}
+
+/* S */
+@media only screen and (min-width: 601px) {
+    .hero-section {background-image: url('images/background-small.jpg')}
+    .about-section::after {content: url('images/image-small.png');}
+}
+
+/*M*/
+@media only screen and (min-width: 768px) {
+    .hero-section {background-image: url('images/background-medium.jpg')}
+    .about-section::after  {content: url('images/image-medium.png');}
+}
+
+/*L*/
+@media only screen and (min-width: 992px) {
+ .hero-section {background-image: url('images/background-large.jpg')}
+ .about-section::after  {content: url('images/image-large.png');}
+}
+
+/*XL*/
+@media only screen and (min-width: 1200px) {
+    .hero-section {background-image: url('images/background-extra-large.jpg')}
+    .about-section::after  {content: url('images/image-extra-large.png');}
+}
+
+/* Header */
+h2 {
+    border-bottom: 3px solid #ffffff;
+    display: inline-block; 
+    padding-bottom: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header,
+section,
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.features-section {
+    display: grid; /* Use Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    background-color: #fb916d;
+    color: #ffffff;
+    background-image: url('images/flourish.png');
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.2); /* opacity little bit */
+    border-radius: 8px; 
+    border: 3px solid #fff5e6; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(21, 20, 20, 0.2); 
+}
+/* Bullet points*/
+.feature ul {
+    list-style-position: inside;
+}
+
+.about-section {
+    background-color: #ffa770;
+    color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+
+.cta-section {
+    background-color: #ffd49b;
+    color: #000000;
+}
+
+/* Header section*/
+.hero-section {
+    background-color: #df6819;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    flex-direction: column; /* image was covering text*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Logo class is a child of Hero*/
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
