@@ -26,7 +26,7 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
         background-image: url('images/background-extra-small.jpg')
     }
 
-    .about-section::after {
+    .about-section::after { /*Pseudo element */
         content: url('images/image-small.png');
     }
 
@@ -77,7 +77,7 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
     }
 }
 
-/* Header */
+/* Header (also selectors) */
 h2 {
     border-bottom: 3px solid #ffffff;
     /* Added underline for headers in feature sections (and anywhere else with h2 header) */
@@ -104,6 +104,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* from https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
     /*Autofits the feature contents, when screen is smaller, stacks feature columns. When bigger it puts them side by side*/
+    /*Also for mobile strategy as it switches depending on phone rotation*/
     gap: 20px;
     background-color: #fb916d;
     color: #ffffff;
@@ -134,6 +135,10 @@ footer {
     background-repeat: no-repeat;
 }
 
+/*show now button hovers orannge, psueudo class*/
+button:hover {
+    background-color: #ff4500; 
+}
 
 .cta-section {
     background-color: #ffd49b;
@@ -145,7 +150,7 @@ footer {
     background-color: #df6819;
     color: #ffffff;
     background-repeat: no-repeat;
-    flex-direction: column;
+    flex-direction: column; /*flexbox method*/
     /* image was covering text*/
     /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction*/
     background-repeat: no-repeat;
