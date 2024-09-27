@@ -17,6 +17,7 @@ Background extra large: https://i.pinimg.com/originals/c0/58/f0/c058f0fcc0a7c72d
 */
 
 /* Resizable Screens from D2L*/
+@media (min-resolution: 300dpi){} /* Hi Res specifiying dots per inch - https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution */
 
 /* XS*/
 @media only screen and (max-width: 600px)
